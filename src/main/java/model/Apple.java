@@ -1,5 +1,8 @@
 package model;
-import model.constants.Discount;
+
+import static model.constants.Colour.RED_APPLES;
+import static model.constants.Discount.DISCOUNT_FOR_RED_APPLES;
+
 
 public class Apple extends Food implements Discountable {
     private String colour; //цвет яблок
@@ -10,8 +13,8 @@ public class Apple extends Food implements Discountable {
         }
     @Override
     public double getDiscount() { //расчет скидки
-        if (colour=="red") {
-            return Discount.DISCOUNT_FOR_RED_APPLES;
+        if (colour==RED_APPLES) {
+            return DISCOUNT_FOR_RED_APPLES;
             }else {
                 return 0;
             }

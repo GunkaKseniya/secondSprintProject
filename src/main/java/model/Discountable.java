@@ -1,5 +1,5 @@
 package model;
 
-public interface Discountable {
+interface Discountable {
     double getDiscount(); //метод возвращает размер скидки
 }

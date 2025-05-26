@@ -22,6 +22,7 @@ public abstract class Food implements Discountable {
         return isVegetarian;
     }
 
+@Override
     public double getDiscount() {
         return 0.0;
     }
